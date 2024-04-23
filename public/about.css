@@ -1,0 +1,430 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: linear-gradient(to right, #555B5B 50%, #CAAD8D 50%);
+    z-index: 999;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#div1 {
+    margin-right: 27%;
+}
+
+#header a.logo {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 50px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+#header a.logo:hover {
+    color: wheat;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 35px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: white;
+}
+#navbar li a:hover,
+#navbar li a.active1 {
+    color: white;
+}
+
+#navbar li a.active::after,
+#navbar li a.hover::after {
+    content: "";
+    height: 2px;
+    background: rgb(84, 77, 65);
+    position: absolute;
+    bottom: -4px;
+    left: 20px; 
+}
+
+#navbar li a.active:hover {
+    color: wheat;
+}
+#navbar li a.active1:hover {
+    color: #555B5B;
+}
+#container {
+    display: flex;
+}
+
+#imge,
+#text {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#imge {
+    background-image: url("/public/assets/Fotograf\ Sara\ Angelica\ Spilling.jpg"); 
+    height: 120vh;
+    background-size: cover;
+    background-position: top 0 right 0; 
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#text{
+    background-color: #555B5B;
+}
+#text h3 {
+    margin-bottom: 0;
+    margin-top: 50%;
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+#text p {
+    color: rgb(42, 48, 46);
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+#text button {
+    background-color:#555B5B;
+    color: wheat;
+    /* border: 0; */
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#product1{
+    text-align: center;
+}
+#product1 h2{
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif
+}
+#product1 p{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro-container .pro {
+    width: 24%;
+    box-sizing: border-box;
+    background-color: #c5bfb8;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+ 
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des span{
+    color: #555B5B;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #555B5B;
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    color: #555B5B;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.cart-button {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #555B5B;
+    color: #CAAD8D;
+}
+
+.cart-button i {
+    margin-left: 5px;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box p{
+    font-size: 50px ;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: auto;
+    padding-right: 55%;
+    font-family: fantasy;
+}
+#sm-banner .banner-box h2{
+    margin-top: 20%;
+    margin-bottom: 0;
+}
+#sm-banner .banner-box h4{
+    margin-top: 3px;
+   
+}
+button.White{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+    margin-bottom: 10%;
+
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/public/assets/hpg.jpg);
+    min-width: 620px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+#sm-banner .banner-box button.White:hover{
+    background-color: #555B5B;
+    color: #CAAD8D;
+}
+#sm-banner .banner-box2 p{
+    font-size: 60px;
+    margin-top: 30%;
+}
+#sm-banner .banner-box2 h2{
+    margin-top: 20%;
+    margin-bottom: 0;
+}
+#sm-banner .banner-box2 h4{
+    margin-top: 3px;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/public/assets/pack.jpg);
+    min-width: 620px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    color: #fff;
+}
+#sm-banner .banner-box2 button.White:hover{
+    background-color: #555B5B;
+    color: #CAAD8D;
+}
+
+#sm-banner .banner-box2 button.White:hover{
+    background-color: #555B5B;
+    color: #CAAD8D;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-image: url(/public/assets/no-revisions-kWVImL5QxJI-unsplash.jpg);
+    height: 80vh;
+    margin-top: 3%;
+
+}
+#newsletter h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#newsletter p{
+    margin-top: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+#newsletter span{
+    color: rgb(241, 2, 2);
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+#newsletter .form{
+    width: 30%;
+    display: flex;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+}
+#newsletter button{
+    background-color: #555B5B;
+    color:#c5bfb8;
+    white-space: nowrap;
+}
+
+footer{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .col1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .column span{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 25x;
+    font-weight: 600;
+    color: #555B5B;
+}
+footer h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+footer img{
+    width: 120px;
+    height: 100px;
+}
+footer .follow{
+    margin-top: 20px;
+
+}
+footer .follow i{
+    margin-top: 20px;
+    color: #555B5B;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .follow i:hover{
+    color: rgb(175, 91, 91);
+
+}
+footer .col a:hover{
+    color: rgb(175, 91, 91);
+    
+}
+footer .copyright{width: 100%;
+    text-align: center};
+    footer .col1 a:hover{
+        color: rgb(175, 91, 91);
+        
+    }
+#aboutus{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 60vh;
+}
+
+.about h2{
+    font-family: 'Cedarville Cursive';
+    padding-left: 46%;
+}
+.content{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.content .heading{
+    font-family: 'Cedarville Cursive';
+}
+.content .para{
+ font-size: 13px;
+}
+.content .size{
+    margin-bottom: 0;
+}
+.content .gap{
+    margin-top: 0;
+}
+.content ol{
+    padding-left: 12px;
+}

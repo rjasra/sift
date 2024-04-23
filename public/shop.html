@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" type="text/css" href="shop.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Libre+Bodoni&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Libre+Bodoni&family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Libre+Bodoni&family=Playfair+Display&family=Rajdhani&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Libre+Bodoni&family=Playfair+Display&family=Rajdhani&family=Raleway:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-oS5/0s5zFzUhL3cvZrP4HxusmejF4cCk5Tpk5I5PvVC63GBeqrgB5SkgZSa9PRC1" crossorigin="anonymous">
+<title>Your Page Title</title>
+</head>
+
+<body>
+    <section id="header">
+        <a class="logo" href="homepage.html">Sift</a>
+        <div id="div1">
+            <ul id="navbar">
+                <li> <a class="active" href="homepage.html">Home</a> </li>
+                <li> <a class="active" href="products.html">Products</a>  </li>
+                <li> <a  class="active1" href="c.html">Cart</a> </li>
+                <li>  <a class="active1" href="about.html">About Us</a></li>
+            </ul>
+        </div>
+</section>
+
+<section id="page-header">
+    <h2>Let's layer up!</h2>
+    <h4>Breeze into winter with style, starting ₹1299</h4>
+    <button>Visit now</button>
+</section>
+
+<div class="sort-section">
+    <h2>Filter</h2>
+    <label for="sortByPrice">Price Range:</label>
+    <select id="sortByPrice" onchange="sortProducts('price')">
+        <option value="none">None</option>
+        <option value="asc">Price: Low to High</option>
+        <option value="desc">Price: High to Low</option>
+    </select>
+
+    <label for="sortByColor">Sort by Color:</label>
+<select id="sortByColor" onchange="sortProducts('color')">
+    <option value="none">None</option>
+    <option value="Orange">Orange</option>
+    <option value="Black">Black</option>
+    <option value="Green">Green</option>
+    <option value="Gray">Gray</option>
+    <option value="Brown">Brown</option>
+    <option value="Blue">Blue</option>
+    <option value="Maroon">Maroon</option>
+</select>
+
+    <label for="sortByRating">Rating:</label>
+    <select id="sortByRating" onchange="sortProducts('rating')">
+        <option value="none">None</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+    </select>
+
+    <label for="sortByType">Product Type:</label>
+    <select id="sortByType" onchange="sortProducts('type')">
+        <option value="none">All</option>
+        <option value="accessory">Accessory</option>
+        <option value="winter">Winter</option>
+        <option value="summer">Summer</option>
+        <option value="footwear">Footwear</option>
+    </select>
+</div>
+
+
+<div class="product-container" id="product-list">
+</div>
+
+<section id="pagination" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">></a>
+</section>
+
+<section id="sm-banner" class="section-p1">
+    <div class="banner-box">
+        <h2>A softer take</h2>
+        <h4>Dress like it's the most wonderful time of the year</h4>
+        <button class="White">Learn More</button>
+    </div>
+    <div class="banner-box2">
+        <h2>Fall Wear</h2>
+        <h4> Fall layers, oversized blazers, deep hues, leather jackets, and cowboy boots</h4>
+        <button class="White">Shop Now</button>
+
+    </div>
+</section>
+
+<section id="newsletter">
+    <div class="newstext">
+        <h4>Sign Up For newsletter</h4>
+        <p>Get latest fashion news, style tips & <span>exclusive offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+<footer class="section-p1">
+    <div class="column">
+        <span>Sift Fashion</span>
+        <h4>Contact</h4>
+        <p><strong>Adress: </strong>District Centre Saket D-3
+            A-Wing, 2nd Floor
+            Delhi, 110017
+            India</p>
+            <p><strong>Phone: </strong>0674 356 1801</p>
+            <p><strong>Hours: </strong>Mon - Sun 11:00 - 21:00</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                     <i class="fab fa-twitter"></i>
+                     <i class="fab fa-instagram"></i>
+                     <i class="fab fa-pinterest-p"></i>
+                     <i class="fab fa-youtube"></i>
+
+                </div>
+
+            </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Track your Order</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Exchange/Return Policy</a>
+    </div>
+    <div class="col1">
+        <h4>My Account</h4>
+        <a href="#">Sign-In</a>
+        <a href="#">My cart</a>
+        <a href="#">Favorites</a>
+        <a href="#">Help</a>
+        
+    </div>
+    <div class="install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="/public/assets/pngwing.com.png">
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2023-2025, SiftFashion All rights reserved</p>
+    </div>
+</footer>
+<script>
+    const products = [
+{ id: 1, name: 'Relaxed Fit Cable-Net Jumper', price: 2499.00, image: '/public/assets/prod1.png', color: 'Orange', rating: 4.5, type: 'winter' },
+{ id: 2, name: 'Relaxed Fit Hoodie', price: 1699.00, image: '/public/assets/prod2.webp', color: 'Maroon', rating: 3.8, type: 'winter' },
+{ id: 3, name: 'Regular Fit Jacquard-knit jumper', price: 2299.00, image: '/public/assets/p3.jpg', color: 'Gray', rating: 4.2, type: 'winter' },
+{ id: 4, name: '4-pack bracelets', price: 799.00, image: '/public/assets/p4.jpg', color: 'Gray', rating: 4.4, type: 'accessory' },
+{ id: 5, name: 'Sunglasses', price: 1999.00, image: '/public/assets/p5.jpg', color: 'Black', rating: 4.1, type: 'accessory' },
+{ id: 6, name: 'Patterned Scarf', price: 1299.00, image: '/public/assets/p6.jpg', color: 'Multicolor', rating: 4.0, type: 'accessory' },
+{ id: 7, name: 'Backpack', price: 999.00, image: '/public/assets/p7.webp', color: 'Black', rating: 4.7, type: 'accessory' },
+{ id: 8, name: 'Slim Fit Blazer', price: 3499.00, image: '/public/assets/p8.webp', color: 'Black', rating: 4.6, type: 'winter' },
+{ id: 9, name: 'Relaxed Fit Blazer', price: 3499.00, image: '/public/assets/p9.webp', color: 'Blue', rating: 3.9, type: 'winter' },
+{ id: 10, name: 'Hip-Hop trainers', price: 3999.00, image: '/public/assets/s2.webp', color: 'Black', rating: 4.8, type: 'footwear' },
+{ id: 11, name: '3 pack rings', price: 499.00, image: '/public/assets/ring1.webp', color: 'Gray', rating: 4.3, type: 'accessory' },
+{ id: 12, name: 'Loose Fit Jumper', price: 1999.00, image: '/public/assets/p12.webp', color: 'Black', rating: 4.0, type: 'Winter' },
+{ id: 13, name: 'Loose Fit Rib-knit jumper', price: 1499.00, image: '/public/assets/p13.webp', color: 'Blue', rating: 3.5, type: 'winter' },
+{ id: 14, name: 'Knit jumper', price: 1499.00, image: '/public/assets/p14.webp', color: 'Green', rating: 4.2, type: 'winter' },
+{ id: 15, name: 'High neck sweater', price: 1999.00, image: '/public/assets/p15.webp', color: 'Brown', rating: 4.6, type: 'winter' },
+{ id: 16, name: 'Oversized t-shirt', price: 999.00, image: '/public/assets/p16.webp', color: 'Gray', rating: 3.7, type: 'summer' },
+{ id: 17, name: 'Relaxed fit printed t-shirt', price: 1199.00, image: '/public/assets/p17.webp', color: 'Gray', rating: 4.5, type: 'summer' },
+// { id: 18, name: 'Ribbed-knit polo t-shirt', price: 999.00, image: 'p18.webp', color: 'Blue', rating: 3.8, type: 'summer' },
+   ];
+
+   function displayProducts(productList) {
+    const productContainer = document.getElementById('product-list');
+    productContainer.innerHTML = '';
+
+    productList.forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('product');
+        productElement.innerHTML = `
+            <img src="${product.image}" alt="${product.name}" onclick="redirectToSProduct(${product.id})">
+            <span class="wishlist-heart" onclick="toggleWishlist(${product.id})">&#x2665;</span>
+            <div class="product-info">
+                <h2>${product.name}</h2>
+                <p class="product-price">Rs. ${product.price.toFixed(2)}</p>
+                <p>Color: ${product.color}</p>
+                <div class="rating-stars">${getRatingStars(product.rating)}</div>
+                <button onclick="addToCart(${product.id})">Add to Cart</button>
+            </div>
+        `;
+        productContainer.appendChild(productElement);
+    });
+}
+
+   function getRatingStars(rating) {
+       const stars = Array.from({ length: 5 }, (_, index) => {
+           const isFilled = index < Math.floor(rating);
+           return `<span style="color: ${isFilled ? '#ffcc00' : '#888'};">&#9733;</span>`;
+       });
+
+       return stars.join('');
+   }
+   function addToCart(productId) {
+    function addToCart(productId) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const productToAdd = products.find(product => product.id === productId);
+
+            if (productToAdd) {
+                const existingItem = cart.find(item => item.id === productId);
+                if (existingItem) {
+                    existingItem.quantity++;
+                } else {
+                    cart.push({ id: productToAdd.id, name: productToAdd.name, price: productToAdd.price, quantity: 1 });
+                }
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert('Product added to cart.');
+            } else {
+                alert('Product not found.');
+            }
+        }
+   }
+
+   function toggleWishlist(productId) {
+       alert(`added to wishlist.`);
+   }
+
+   function sortProducts(sortBy) {
+    let sortedProducts = [...products];
+
+    if (sortBy === 'price') {
+        const sortByPrice = document.getElementById('sortByPrice').value;
+        if (sortByPrice === 'asc') {
+            sortedProducts.sort((a, b) => a.price - b.price);
+        } else if (sortByPrice === 'desc') {
+            sortedProducts.sort((a, b) => b.price - a.price);
+        }
+    } else if (sortBy === 'color') {
+        const selectedColor = document.getElementById('sortByColor').value;
+        if (selectedColor !== 'none') {
+            sortedProducts = sortedProducts.filter(product => product.color.toLowerCase() === selectedColor.toLowerCase());
+        }
+    } else if (sortBy === 'rating') {
+        const sortByRating = document.getElementById('sortByRating').value;
+        if (sortByRating === 'asc') {
+            sortedProducts.sort((a, b) => a.rating - b.rating);
+        } else if (sortByRating === 'desc') {
+            sortedProducts.sort((a, b) => b.rating - a.rating);
+        }
+    } else if (sortBy === 'type') {
+        const sortByType = document.getElementById('sortByType').value;
+        if (sortByType !== 'none') {
+            sortedProducts = sortedProducts.filter(product => product.type === sortByType);
+        }
+    }
+    function redirectToSProduct(productId) {
+    window.location.href = 'sproduct.html?id=' + productId;
+}
+
+    displayProducts(sortedProducts);
+}
+function redirectToSProduct(productId) {
+    
+    window.location.href = 'sproduct.html?id=1' + productId;
+}
+   displayProducts(products);
+</script>
+</body>
+</html>
